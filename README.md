@@ -1,5 +1,8 @@
 # Project
 
+**Motivation**
+The purpose of this project was to program two microcontrollers to work together. One records temperature data and sends it to the other, which changes an LED’s blinking rate according to the temperature.
+
 **Installations:**
 Install ESP-IDF Extension using from this link https://github.com/espressif/vscode-esp-idf-extension/tree/master
 Select version v5.5.
