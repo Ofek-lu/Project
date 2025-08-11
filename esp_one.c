@@ -40,8 +40,7 @@ void app_main(void)
         {
             ESP_LOGI(TAG, "Temperature: %.2f °C", temp);
 
-            /*delay 3 seconds before sending new temperature */
-            vTaskDelay(pdMS_TO_TICKS(3000));
+            
             /* sending message via UART*/
             uart_write_bytes(UART_PORT_NUM, &temp, 4);
         }
@@ -50,6 +49,9 @@ void app_main(void)
         {
             ESP_LOGI(TAG, "Thermocouple not connected");
         }
+
+        /*delay 3 seconds before recording current temperature */
+        vTaskDelay(pdMS_TO_TICKS(3000));
     }
 }
 
