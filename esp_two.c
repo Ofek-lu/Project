@@ -65,7 +65,7 @@ static void ModifyOffTime(void)
 
     else if (temp > 30.0f)
     {
-        g_off_time = 1000;
+        g_off_time = 40000;
     }
 
     else
