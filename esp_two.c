@@ -23,8 +23,8 @@ safely from an ISR  */
 
 /* LED control */
 uint8_t g_led_state = 1;
-DRAM_ATTR const uint64_t g_on_time = 220000;        /* 220 ms  */
-volatile uint64_t g_off_time = 1780000;             /* 1780 ms */
+DRAM_ATTR const uint32_t g_on_time = 220000;        /* 220 ms  */
+volatile uint32_t g_off_time = 1780000;             /* 1780 ms */
 
 static const char *TAG = "Logging:";
 
